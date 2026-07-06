@@ -1,6 +1,6 @@
 # CloudStreamXR 🚀
 
-Repositori resmi untuk distribusi, metadata rilis, dan pembaruan otomatis aplikasi klon **CloudStreamXR**. Aplikasi ini dikustomisasi secara khusus menggunakan pipeline Android App Cloner dengan integrasi keamanan tingkat lanjut dan alur pembaruan in-app yang mulus.
+Repositori resmi untuk distribusi, metadata rilis, dan pembaruan otomatis aplikasi klon **CloudStreamXR**. Aplikasi ini dikustomisasi secara khusus menggunakan pipeline Android App Cloner dengan penyatuan data kustom dan alur pembaruan in-app yang mulus.
 
 ---
 
@@ -8,9 +8,9 @@ Repositori resmi untuk distribusi, metadata rilis, dan pembaruan otomatis aplika
 
 Aplikasi klon ini dilengkapi dengan fitur premium berikut:
 
-### 1. 🛡️ Proteksi Keamanan Tingkat Tinggi
-* **Self-Locking Signature**: Mengunci sidik jari enkripsi (signature) APK pada instalasi pertama di perangkat pengguna. Jika APK dimodifikasi atau ditandatangani ulang oleh pihak ketiga, aplikasi akan mendeteksinya dan otomatis menolak berjalan.
-* **Anti-Tamper & Anti-Debugger**: Proteksi agresif terhadap percobaan rekayasa balik (reverse engineering) atau debugging. Aplikasi akan langsung mematikan prosesnya (`android.os.Process.killProcess`) jika mendeteksi debugger aktif atau bendera debug dinyalakan di manifes.
+### 1. 📦 Penyatuan & Pemulihan Data Kustom (Auto-Restore)
+* **Data Bundling**: Pengguna dapat menyatukan konfigurasi, daftar putar, riwayat tontonan, dan pengaturan ekstensi bawaan ke dalam satu paket ZIP biner saat proses kloning.
+* **Auto-Restore on Launch**: Ketika aplikasi dipasang pertama kali di HP pengguna baru, ia otomatis mendeteksi dan memulihkan seluruh data konfigurasi tersebut ke folder internal aplikasi secara instan tanpa memerlukan akses root manual.
 
 ### 2. 🔄 In-App Auto Update (Pembaruan Otomatis)
 * **Pengecekan Asinkron**: Setiap kali aplikasi diluncurkan, ia akan membaca konfigurasi jarak jauh `update.json` di latar belakang secara asinkron.
