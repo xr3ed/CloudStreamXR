@@ -22,6 +22,20 @@ Aplikasi klon ini dilengkapi dengan fitur premium berikut:
 * **Custom Extension Label**: Label ekstensi/plugin dapat disesuaikan untuk melokalisasi menu (misal: *"Ekstensi Saya"*, *"Daftar Provider"*, dll.).
 * **QRIS Donation Integration**: Menampilkan dialog donasi QRIS kustom untuk mempermudah donatur melakukan scan kode pembayaran langsung dari dalam aplikasi.
 
+## 🔗 Tautan Metadata Pembaruan
+
+Gunakan salah satu URL di bawah ini untuk mengisi opsi **Update JSON URL** di aplikasi **App Cloner** saat membuat klon baru:
+
+* **⭐ Jalur jsDelivr CDN (Direkomendasikan — Bebas Rate Limit 429)**
+  ```text
+  https://cdn.jsdelivr.net/gh/xr3ed/CloudStreamXR@main/update.json
+  ```
+
+* **Jalur GitHub Raw (Alternatif jika CDN mengalami gangguan)**
+  ```text
+  https://raw.githubusercontent.com/xr3ed/CloudStreamXR/main/update.json
+  ```
+
 ---
 
 ## 📁 Struktur Metadata Pembaruan (`update.json`)
