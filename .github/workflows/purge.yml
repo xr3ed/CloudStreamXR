@@ -15,5 +15,6 @@ jobs:
       - name: Purge update.json
         run: |
           echo "Purging update.json from jsDelivr cache..."
-          curl -s "https://purge.jsdelivr.net/gh/xr3ed/CloudStreamXR@main/update.json"
+          curl -i "https://purge.jsdelivr.net/gh/xr3ed/CloudStreamXR@main/update.json"
+          echo ""
           echo "Purge completed!"
